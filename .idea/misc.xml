@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/57313/Estampamos/app/src/main/res/drawable/splash.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/57313/Estampamos/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/57313/Estampamos/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.11666666666666667" />
       </map>
     </option>
   </component>
