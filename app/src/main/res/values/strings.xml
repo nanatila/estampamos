@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Estampamos</string>
+    <string name="ingresar">INGRESAR</string>
+    <string name="INICIO">INICIO</string>
+    <string name="logo">logo</string>
+    <string name="inicio">INICIO</string>
+    <string name="usuario">USUARIO</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="no_tienes_cuenta_registrate">NO TIENES CUENTA/ REGISTRATE</string>
 </resources>
