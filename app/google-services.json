@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "617855156737",
+    "project_id": "estampamoslogin",
+    "storage_bucket": "estampamoslogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617855156737:android:eb37a033cd1ada65ceb600",
+        "android_client_info": {
+          "package_name": "com.example.applogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617855156737-e0548anl9n68gpqpu4ielb1d915ajjh3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.applogin",
+            "certificate_hash": "afeecd2dee5b9a559518ac040201e5656bca649c"
+          }
+        },
+        {
+          "client_id": "617855156737-t1jcqoq38lrnopgilaht2fdhk1q9kbfq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3mYCpcbnhOCPAwlwfrCg7h0BxnMEa24s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617855156737-t1jcqoq38lrnopgilaht2fdhk1q9kbfq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
