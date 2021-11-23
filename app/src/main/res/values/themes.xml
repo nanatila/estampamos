@@ -18,4 +18,13 @@
         <item name="android:windowBackground">@drawable/splash</item>
     </style>
 
+    <style name="Theme.Applogin.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Applogin.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Applogin.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

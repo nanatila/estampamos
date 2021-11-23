@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "503591290768",
+    "project_id": "loginmisiontic",
+    "storage_bucket": "loginmisiontic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:503591290768:android:3730c89ef886574154d515",
+        "android_client_info": {
+          "package_name": "com.example.applogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "503591290768-n0ena1l9pr4bklqvu651ahgg4hg9k8cs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.applogin",
+            "certificate_hash": "944ce44077666dc731862a9e0d0237a8941beb58"
+          }
+        },
+        {
+          "client_id": "503591290768-dd9emueqf8t94kot50pvbj4intkvqkri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCghTwFV3osEk0b1zGL-KukBgT9Zo-wGTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "503591290768-dd9emueqf8t94kot50pvbj4intkvqkri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

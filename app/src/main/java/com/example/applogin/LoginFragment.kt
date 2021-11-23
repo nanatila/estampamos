@@ -86,10 +86,11 @@ class LoginFragment : Fragment() {
             .addOnCompleteListener(requireActivity()) { task ->
                 if (task.isSuccessful) {
                     println(">> muy bien")
+
                     view.findNavController().navigate(R.id.action_loginFragment_to_homeActivity)
 
                 } else {
-                    println(">> login noexitoso")
+                    println(">> login no exitoso")
                     Toast.makeText(requireActivity().applicationContext, "usuario No valido", Toast.LENGTH_LONG)
                 }
             }

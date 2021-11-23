@@ -1,6 +1,8 @@
 package com.example.applogin
 
+import android.content.ContentValues.TAG
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -64,19 +66,18 @@ class RegistroFragment : Fragment() {
         }
     }
 
-    fun createAccount(view: View, email:String, password:String){
+    private fun createAccount(view: View, email:String, password:String){
         println(email)
         println(password)
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(requireActivity()) { task ->
                 if (task.isSuccessful) {
-
                     val user = auth.currentUser
                     println(">>> creado exitosamente")
                     view.findNavController().navigate(R.id.action_registroFragment_to_homeActivity)
 
                 } else {
-                    println(">>> algo anda mal,no fue creado")
+                    println(">>> algo anda mal, no fue creado")
 
                 }
             }
