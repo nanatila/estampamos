@@ -32,6 +32,7 @@ class LoginFragment : Fragment() {
     private lateinit var pass:EditText
     private lateinit var btnInicio: Button
     private lateinit var btnRegistro: Button
+    private lateinit var btnPhone: Button
 
     private lateinit var auth: FirebaseAuth
 
@@ -59,6 +60,7 @@ class LoginFragment : Fragment() {
         pass = view.findViewById(R.id.loginTextPassword)
         btnInicio = view.findViewById(R.id.loginButtonInicio)
         btnRegistro = view.findViewById(R.id.loginButtonRegister)
+        btnPhone = view.findViewById(R.id.loginButtonPhone)
 
         btnInicio.setOnClickListener {
                 view:View -> print("BTN INICIO")
@@ -70,6 +72,12 @@ class LoginFragment : Fragment() {
                 view:View -> print("BTN REGISTRO")
 
                 view.findNavController().navigate(R.id.action_loginFragment_to_registroFragment)
+        }
+
+        btnPhone.setOnClickListener {
+                view:View ->
+                view.findNavController().navigate(R.id.action_loginFragment_to_phoneFragment)
+
         }
 
     }
