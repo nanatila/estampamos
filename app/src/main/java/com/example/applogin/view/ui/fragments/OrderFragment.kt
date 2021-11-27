@@ -5,12 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.applogin.R
 import com.example.applogin.model.Producto
 import com.example.applogin.view.adapter.pedidosadapter
+import com.example.applogin.viewmodel.ProductosListViewModel
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -27,22 +30,8 @@ class OrderFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
-    var productos = listOf(
+    private  val viewModel: ProductosListViewModel by viewModels()
 
-        Producto(
-            "Tesla X",
-            2699999,
-            "El Tesla Model X es un SUV completamente eléctrico, del segmento E, fabricado por Tesla desde 2016, con enfoque Premium y con posibilidad de acomodar hasta siete personas.",
-            "https://www.diariomotor.com/imagenes/picscache/1920x1600c/tesla-model-x-9_1920x1600c.jpg"
-        ),
-        Producto(
-            "Tesla X",
-            2699999,
-            "El Tesla Model X es un SUV completa",
-            "https://www.diariomotor.com/imagenes/picscache/1920x1600c/tesla-model-x-9_1920x1600c.jpg")
-
-
-)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -55,18 +44,51 @@ class OrderFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        viewModel.getProductos()
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_order, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
         super.onViewCreated(view, savedInstanceState)
+
         var rvComments = view.findViewById<RecyclerView>(R.id.rvComments)
         rvComments.layoutManager = LinearLayoutManager(requireActivity())
 
-        val adapter = pedidosadapter(productos, fragmentManager = childFragmentManager)
-        rvComments.adapter = adapter
+
+
+        viewModel.productosModel.observe(viewLifecycleOwner) {
+
+                productos ->
+
+            val adapter = pedidosadapter(productos, fragmentManager = childFragmentManager)
+            rvComments.adapter = adapter
+
+        }
+
+
+        var fab = view.findViewById<FloatingActionButton>(R.id.fab)
+        fab.setOnClickListener { view: View ->
+
+            replaceFragment(CarritoFragment())
+        }
+
+
     }
+
+        private fun replaceFragment(fragment: Fragment){
+            if(fragment != null){
+                val transaction = requireActivity().supportFragmentManager.beginTransaction()
+                transaction.replace(R.id.fragment_container, fragment)
+                transaction.commit()
+
+            }
+        }
+
+
 
     companion object {
         /**

@@ -9,19 +9,20 @@
 
     <item
         android:id="@+id/navOrderFragment"
-        android:title="Mi pedido"
-        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="Tienda"
+        android:icon="@drawable/ic_baseline_shopping_basket_24"
         />
 
     <item
         android:id="@+id/navCommentsFragment"
         android:title="Comentarios"
-        android:icon="@drawable/lupa_icon"
+        android:icon="@drawable/comment"
         />
-
     <item
         android:id="@+id/navAdminFragment"
         android:title="Mi Cuenta"
         android:icon="@drawable/icon_perfil"
         />
+
+
 </menu>
