@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Fragment_Producto">
+    android:layout_height="match_parent">
+
 
     <ImageView
         android:id="@+id/imageView"
@@ -130,6 +130,7 @@
         android:id="@+id/button_M"
         android:layout_width="49dp"
         android:layout_height="45dp"
+        android:layout_marginBottom="44dp"
         android:background="transparent"
         android:text="M"
         android:textColor="@color/black"
@@ -139,7 +140,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/button_S"
         app:layout_constraintTop_toBottomOf="@+id/boton_sumar"
-        app:layout_constraintVertical_bias="0.287"
+        app:layout_constraintVertical_bias="0.863"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

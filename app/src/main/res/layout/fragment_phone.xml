@@ -5,20 +5,24 @@
     android:layout_height="match_parent"
     tools:context=".PhoneFragment"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@drawable/camiseta_b">
 
     <EditText
         android:id="@+id/TextPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:layout_marginBottom="25dp"
         android:inputType="phone"
         android:hint="Celular"/>
+
 
     <Button
         android:id="@+id/btnEnvioMsa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
         android:text="Enviar Codigo" />
 
     <EditText
@@ -26,6 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:layout_marginBottom="25dp"
         android:inputType="textPersonName"
         android:hint="Enviar codigo"/>
 
@@ -33,5 +38,7 @@
         android:id="@+id/btnValidate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
         android:text="validar"/>
+
 </LinearLayout>
