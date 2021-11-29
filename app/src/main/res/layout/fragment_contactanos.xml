@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment_contactanos">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="CONTACTANOS"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/mapas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.718" />
+
+    <ImageView
+        android:id="@+id/mapas"
+        android:layout_width="362dp"
+        android:layout_height="259dp"
+        android:layout_marginBottom="28dp"
+        android:src="@mipmap/ic_mapas_foreground"
+        app:layout_constraintBottom_toTopOf="@id/facebook"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageButton
+        android:id="@+id/whasaap"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="136dp"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/ic_whaasap_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/facebook" />
+
+    <ImageButton
+        android:id="@+id/facebook"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="132dp"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/ic_facebook_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/instagram"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="132dp"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/ic_instagram_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
