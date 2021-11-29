@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/ic_buscar"
+        android:icon="@drawable/ic_search"
+        android:title="buscar"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/comentarios"
+        android:title="COMENTARIOS"/>
+    <item
+        android:id="@+id/contactenos"
+        android:title="CONTACTECNOS"/>
+    <item
+        android:id="@+id/configuracion"
+        android:title="CONFIGURACION"/>
+    <item
+        android:id="@+id/cerrar_secion"
+        android:title="CERRAR SESION"/>
+</menu>
