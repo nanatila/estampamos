@@ -14,7 +14,7 @@
         android:layout_marginTop="17dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textproduct"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
         app:srcCompat="@drawable/camiseta_a" />
 
 
@@ -23,14 +23,11 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginEnd="120dp"
-        android:backgorund="@null"
-        android:background="@android:color/transparent"
         android:src="@drawable/sumar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.065"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.065" />
 
     <ImageButton
         android:id="@+id/boton_menos"
@@ -61,7 +58,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textproduct"
+        android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Camiseta One Skate"
@@ -91,6 +88,39 @@
         app:layout_constraintVertical_bias="0.093"
         tools:ignore="MissingConstraints" />
 
+    <TextView
+        android:id="@+id/tvCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="precio"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.281"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="description"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.433"
+        tools:ignore="MissingConstraints" />
+
     <Button
         android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
@@ -107,40 +137,36 @@
         android:tint="#0091ea"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_S"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
-
 
     <Button
         android:id="@+id/button_S"
         android:layout_width="46dp"
         android:layout_height="45dp"
         android:layout_marginTop="17dp"
-        android:background="transparent"
         android:text="S"
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintStart_toEndOf="@+id/Talla"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <Button
         android:id="@+id/button_M"
         android:layout_width="49dp"
         android:layout_height="45dp"
         android:layout_marginBottom="44dp"
-        android:background="transparent"
         android:text="M"
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/btnAdd"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.165"
         app:layout_constraintStart_toEndOf="@+id/button_S"
         app:layout_constraintTop_toBottomOf="@+id/boton_sumar"
-        app:layout_constraintVertical_bias="0.863"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.279" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

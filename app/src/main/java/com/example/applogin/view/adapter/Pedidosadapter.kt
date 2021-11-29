@@ -53,16 +53,9 @@ class pedidosadapter (val productoList:List<Producto>, val fragmentManager: Frag
 
             }
 
-
-
-
-
         }
 
     }
-
-
-
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ViewHolder {
 
 

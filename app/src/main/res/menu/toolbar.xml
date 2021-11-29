@@ -17,6 +17,6 @@
         android:id="@+id/configuracion"
         android:title="CONFIGURACION"/>
     <item
-        android:id="@+id/cerrar_secion"
+        android:id="@+id/cerrar_sesion"
         android:title="CERRAR SESION"/>
 </menu>
