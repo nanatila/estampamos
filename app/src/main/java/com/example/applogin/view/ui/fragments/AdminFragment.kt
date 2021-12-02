@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import com.example.applogin.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -36,6 +37,29 @@ class AdminFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_admin, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val button = view.findViewById<Button>(R.id.navigate_edition)
+        button?.setOnClickListener {
+
+            //findNavController().navigate(R.id.adminDetailFragmentDialog, null)
+
+            var nombre = "NombrePrueba"
+            var direccion = "DireccionPrueba"
+            var telefono = "TelefonoPrueba"
+            var correo = "CorreoPrueba"
+
+            var dialogFragment = AdminDetailDialogFragment().newInstance(
+                nombre,
+                direccion,
+                telefono,
+                correo
+            )
+            dialogFragment.show(childFragmentManager, "AdminDetailDialogFragment")
+
+        }
     }
 
     companion object {
