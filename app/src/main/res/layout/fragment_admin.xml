@@ -39,6 +39,7 @@
                     android:layout_gravity="center_horizontal" />
 
                 <TextView
+                    android:id="@+id/etNameAdmin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -47,6 +48,7 @@
                     android:background="@drawable/botton_redondo"/>
 
                 <TextView
+                    android:id="@+id/etAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -55,6 +57,7 @@
                     android:background="@drawable/botton_redondo"/>
 
                 <TextView
+                    android:id="@+id/etPhone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -63,6 +66,7 @@
                     android:background="@drawable/botton_redondo"/>
 
                 <TextView
+                    android:id="@+id/etemail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"

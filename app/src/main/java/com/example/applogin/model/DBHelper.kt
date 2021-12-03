@@ -14,12 +14,13 @@ class DBHelper(context: FragmentActivity?):
     }
 
     override fun onCreate(db: SQLiteDatabase?) {
-        db!!.execSQL("CREATE TABLE" + Tables.information["TABLE_NAME"]  + "(" +
-                Tables.information["_id"] + "INTEGER PRIMARY KEY AUTOINCREMENT ," +
+        db!!.execSQL("CREATE TABLE " + Tables.information["TABLE_NAME"]  + " (" +
+                Tables.information["_id"] + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 Tables.information["_nombre"] + " TEXT NOT NULL, " +
                 Tables.information["_direccion"] + " TEXT NOT NULL, " +
                 Tables.information["_correo"] + " TEXT NOT NULL, " +
-                Tables.information["_telefono"] + " TEXT NOT NULL, ")
+                Tables.information["_telefono"] + " TEXT NOT NULL )"
+        )
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
@@ -47,7 +48,7 @@ class DBHelper(context: FragmentActivity?):
         data.put(Tables.information["_telefono"], address)
         val db = this.writableDatabase
 
-        db.update(Tables.information["TABLE_NAME"], data, Tables.information["_id"], args)
+        db.update(Tables.information["TABLE_NAME"], data, Tables.information["_id"]+"=?", args)
         db.close()
     }
 }

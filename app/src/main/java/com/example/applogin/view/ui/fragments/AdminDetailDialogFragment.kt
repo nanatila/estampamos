@@ -1,5 +1,6 @@
 package com.example.applogin.view.ui.fragments
 
+import android.database.sqlite.SQLiteDatabase
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,6 +11,7 @@ import androidx.fragment.app.DialogFragment
 import com.example.applogin.R
 import com.example.applogin.databinding.FragmentAdminDetailDialogBinding
 import com.example.applogin.model.DBHelper
+import com.example.applogin.model.Tables
 import java.lang.ref.ReferenceQueue
 
 // TODO: Rename parameter arguments, choose names that match
@@ -95,6 +97,18 @@ class AdminDetailDialogFragment : DialogFragment() {
                 binding.etAddress.text.clear()
                 binding.etPhone.text.clear()
                 binding.etemail.text.clear()
+
+                val db: SQLiteDatabase = informacionDBHelper.readableDatabase
+                val cursor = db.rawQuery("SELECT * FROM " + Tables.information["TABLE_NAME"],null)
+
+                if(cursor.moveToFirst()){
+                    do{
+                        binding.etNameAdmin.setText(cursor.getString(1).toString())
+                        binding.etAddress.setText(cursor.getString(2).toString())
+                        binding.etPhone.setText(cursor.getString(3).toString())
+                        binding.etemail.setText(cursor.getString(4).toString())
+                    }while(cursor.moveToNext())
+                }
 
             }else{
                 Toast.makeText(requireContext(),"Error al guardare", Toast.LENGTH_LONG).show()
