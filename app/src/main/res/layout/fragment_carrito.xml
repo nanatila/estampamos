@@ -1,42 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.ui.fragments.CarritoFragment">
 
+
     <LinearLayout
         android:id="@+id/panelCarrito"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        >
 
         <TextView
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Total"
             android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
             android:gravity="center_horizontal"
+            android:text="Total"
             android:textSize="20dp"
-            android:layout_weight="1"/>
+
+
+            />
 
         <TextView
             android:id="@+id/tvTotal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="$ 0"
             android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
             android:gravity="center_horizontal"
-            android:textSize="20dp"
-            android:layout_weight="1"/>
+            android:text="$ 0"
+            android:textSize="20dp" />
 
 
-<Button
-    android:id="@+id/btnPagar"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Pagar"
-    android:layout_gravity="right"/>
+        <Button
+            android:id="@+id/btnPagar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Pagar" />
 
 
     </LinearLayout>
@@ -45,8 +53,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvProductosCarrito"
         android:layout_width="match_parent"
+
         android:layout_height="match_parent"
-        android:layout_below="@+id/panelCarrito"
-        />
+        android:layout_below="@+id/panelCarrito" />
+
 
 </RelativeLayout>

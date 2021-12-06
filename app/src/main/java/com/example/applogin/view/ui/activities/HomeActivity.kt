@@ -6,7 +6,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.applogin.R
 import com.example.applogin.view.ui.fragments.AdminFragment
-import com.example.applogin.view.ui.fragments.ComentsFragment
+import com.example.applogin.view.ui.fragments.CommentsFragment
 import com.example.applogin.view.ui.fragments.HomeFragment
 import com.example.applogin.view.ui.fragments.OrderFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -15,7 +15,7 @@ class HomeActivity : AppCompatActivity() {
 
     private val homeFragment = HomeFragment()
     private val orderFragment = OrderFragment()
-    private val commentsFragment = ComentsFragment()
+    private val commentsFragment = CommentsFragment()
     private val adminFragment = AdminFragment()
 
 

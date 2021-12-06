@@ -23,7 +23,7 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class OrderDetailDialogFragment : DialogFragment() {
-        private var id:Int?=null
+        private var id:String?=null
         private var nombre:String?=null
         private var precio:Int? = null
         private var descripcion:String?=null
@@ -31,16 +31,16 @@ class OrderDetailDialogFragment : DialogFragment() {
 
 
     fun newInstance (
-            id:Int,
-         nombre:String,
-         precio:Int,
-         descripcion:String,
-         imageUrl:String
+        id: String,
+        nombre:String,
+        precio:Int,
+        descripcion:String,
+        imageUrl:String
          ): OrderDetailDialogFragment{
         val f=OrderDetailDialogFragment()
 
     val args=Bundle()
-    args.putInt("id",id)
+    args.putString("id",id)
     args.putString("nombre", nombre)
     args.putInt("precio",precio)
     args.putString("descripción", descripcion)
@@ -57,7 +57,7 @@ class OrderDetailDialogFragment : DialogFragment() {
         super.onCreate(savedInstanceState)
         arguments?.let {
 
-            id= it.getInt("id")
+            id= it.getString("id")
             nombre=it.getString("nombre")
             precio  =it.getInt("precio")
             descripcion =it.getString("descripcion")
