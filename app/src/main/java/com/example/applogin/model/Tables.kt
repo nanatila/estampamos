@@ -8,8 +8,8 @@ class Tables {
             "_id" to "id",
             "_nombre" to "nombre",
             "_direccion" to "direccion",
-            "_correo" to "correo",
-            "_telefono" to "telefono"
+            "_telefono" to "telefono",
+            "_correo" to "correo"
         )
     }
 }

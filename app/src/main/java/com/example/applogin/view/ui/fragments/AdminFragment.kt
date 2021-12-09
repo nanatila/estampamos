@@ -42,12 +42,12 @@ class AdminFragment : Fragment() {
         val db: SQLiteDatabase = informacionDBHelper.readableDatabase
         val cursor = db.rawQuery("SELECT * FROM " + Tables.information["TABLE_NAME"] + " WHERE id=1",null)
 
-        if(cursor.moveToFirst()){
+        if(!cursor.moveToFirst()){
             informacionDBHelper.insert(
                 "nombre",
                 "direccion",
-                "email@app.com",
-                "telefono"
+                "telefono",
+                "email@app.com"
             )
         }
 

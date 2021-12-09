@@ -36,7 +36,7 @@ class AdminDetailDialogFragment : DialogFragment() {
 
     private lateinit var informacionDBHelper:DBHelper
 
-    fun newInstance(nombre:String, direccion:String, telefono:String, correo:String,):AdminDetailDialogFragment{
+    fun newInstance(nombre:String, direccion:String, telefono:String, correo:String):AdminDetailDialogFragment{
         val f = AdminDetailDialogFragment()
         val args = Bundle()
         args.putString("nombre",nombre)
@@ -109,6 +109,8 @@ class AdminDetailDialogFragment : DialogFragment() {
                         binding.etemail.setText(cursor.getString(4).toString())
                     }while(cursor.moveToNext())
                 }
+
+                dismiss()
 
             }else{
                 Toast.makeText(requireContext(),"Error al guardare", Toast.LENGTH_LONG).show()

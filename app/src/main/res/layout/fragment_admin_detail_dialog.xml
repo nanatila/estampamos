@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.ui.fragments.AdminDetailDialogFragment">
+    tools:context=".view.ui.fragments.AdminFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -24,15 +24,17 @@
 
                 <ImageView
                     android:id="@+id/ibPhotoAdmin"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
                     android:src="@mipmap/ic_foto_perfil_foreground"
+                    android:scaleType="fitCenter"
                     android:layout_gravity="center_horizontal" />
 
                 <EditText
                     android:id="@+id/etNameAdmin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center"
                     android:hint="Nombre"
@@ -43,30 +45,30 @@
                     android:id="@+id/etAddress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center"
                     android:hint="Direccion"
-                    android:inputType="textMultiLine"
                     />
 
                 <EditText
                     android:id="@+id/etPhone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center"
                     android:hint="Telefono"
-                    android:inputType="textMultiLine"
                     />
 
                 <EditText
                     android:id="@+id/etemail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:layout_gravity="center_horizontal"
                     android:gravity="center"
                     android:hint="Correo"
-                    android:inputType="textMultiLine"
                     />
 
 
