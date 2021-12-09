@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Applogin">
 
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBpiXQiNO6LPqDtD_f5pydsH0wGDLfd97g"/>
+
 
         <activity
             android:name=".view.ui.activities.MainActivity"
