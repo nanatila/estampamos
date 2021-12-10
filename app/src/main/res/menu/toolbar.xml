@@ -17,6 +17,9 @@
         android:id="@+id/configuracion"
         android:title="CONFIGURACION"/>
     <item
+        android:id="@+id/scan"
+        android:title="SCANNER"/>
+    <item
         android:id="@+id/cerrar_sesion"
         android:title="CERRAR SESION"/>
 </menu>

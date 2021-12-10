@@ -31,11 +31,18 @@
             app:menu="@menu/menu" />
 
     </RelativeLayout>
-    <include layout="@layout/tootlbar"/>
 
-
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/toolbar"
+        app:navigationIcon="@mipmap/ic_imagen_logo_foreground"
+        android:background="#fec858"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     </layout>

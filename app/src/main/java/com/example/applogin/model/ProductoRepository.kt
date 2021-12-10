@@ -128,4 +128,43 @@ class ProductoRepository {
         //TODO Decrementar Inventario en Firebase
 
     }
+    fun getProductoByBarCode( mutableLiveData: MutableLiveData<Producto>, codeBar:String){
+        //TODO traer productos de firebase
+        var producto=Producto(
+            "1",
+            "Camiseta Code ",
+            35000,
+            "Camiseta Negra Estampado con imagen de referencia",
+            "https://srv.latostadora.com/designall.dll/eat_coffee_code_repeat_light--i:135623234096701356232017092620;k:220c090171475e2d3afb83832b2e7b37;h:350;b:f8f8f8;s:H_A20.jpg",
+            5,
+            "ABC-1001",
+        )
+
+        docRef.whereEqualTo("cod_barras", codeBar).addSnapshotListener() { snapshot, e ->
+            if (e != null) {
+                Log.w(TAG, "Listen failed.", e)
+                return@addSnapshotListener
+            }
+
+            if (snapshot != null && !snapshot.isEmpty) {
+
+                for (document in snapshot.documents) {
+
+                    if(producto!=null){
+                        producto = document.toObject(Producto::class.java)!!
+                    }
+
+                }
+                mutableLiveData.postValue(producto)
+
+            } else {
+                Log.d(TAG, "Current data: null")
+            }
+        }
+
+        mutableLiveData.postValue(producto)
+
+
+
+    }
 }
