@@ -49,4 +49,6 @@
         android:layout_below="@+id/bienvenidos"
         android:background="@drawable/wddtshirt3" />
 
+
+
 </RelativeLayout>
